@@ -37,39 +37,28 @@ nav {
   .botones {
     flex-direction: column;
     display: flex;
-    .btn1 {
+    .btn {
       display: inline-block;
       padding: 10px 32px;
       margin: 0 20px 20px 0;
-      border: 2px solid $color-button-icon;
-      border-radius: 32px;
       box-sizing: border-box;
       text-decoration: none;
       font-family: $font-title;
       color: #ffffff;
-      background-color: $color-button-icon;
       text-align: center;
       transition: all 0.2s;
       font-size: $fontsize-sm;
       font-weight: $font-weight-subtitulos;
       letter-spacing: 1px;
+      border-radius: 32px;
+    }
+    .btn1 {
+      border: 2px solid $color-button-icon;
+
+      background-color: $color-button-icon;
     }
     .btn2 {
-      display: inline-block;
-      padding: 10px 32px;
-      margin: 0 20px 20px 0;
       border: 2px solid #ffffff;
-      border-radius: 32px;
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family: $font-title;
-      color: #ffffff;
-      //background-color: $color-button-icon;
-      text-align: center;
-      transition: all 0.2s;
-      font-size: $fontsize-sm;
-      font-weight: $font-weight-subtitulos;
-      letter-spacing: 1px;
     }
   }
 }
