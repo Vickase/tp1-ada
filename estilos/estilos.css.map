@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"estilos.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/sections/_home.scss","../sass/common/_variables.scss","../sass/estilos.scss"],"names":[],"mappings":"AACE;EACE;EACA;;AAEA;EACE,SCYW;EDXX;EACA;EACA;EACA;;AAEA;EACE;EACA;;;AEVR;EACE;EACA;;;AAGF;EACE;EACA","file":"estilos.css"}
