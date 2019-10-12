@@ -32,8 +32,9 @@ body {
   }
   p {
     font-family: $font-texto;
-    font-size: $fontsize-sm;
     color: $font-color-sub-aboutus;
     text-align: center;
+    margin:0;
+    font-size:$fontsize-reg;
   }
 }

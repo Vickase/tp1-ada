@@ -80,6 +80,7 @@ nav {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  box-shadow: 0 20px 10px 0 rgba(122, 149, 221, 0.1);
 }
 .card .iconos {
   display: inline;
@@ -147,9 +148,10 @@ body {
 }
 .cabecera p {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
   color: #283d50;
   text-align: center;
+  margin: 0;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
