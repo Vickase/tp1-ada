@@ -1,27 +1,102 @@
-.container #home {
-  border: 1px solid black;
-  width: 100%;
+nav {
+  display: none;
 }
-.container #home .home-container {
+
+#home {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background: url("../img/intro-bg.png") center no-repeat;
+  background-size: cover;
+  background-color: #1445b3;
+}
+#home .home-container {
   padding: 0px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1445b3;
 }
-.container #home .home-container .hero-image {
-  max-width: 100%;
+#home .home-container .hero-image {
+  max-width: 80%;
   height: auto;
+  margin-top: 35px;
+}
+#home h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  padding: 0px 20px;
+  word-wrap: break-word;
+}
+#home h1 span {
+  color: #74b5fc;
+  text-decoration: underline;
+}
+#home .botones {
+  flex-direction: column;
+  display: flex;
+}
+#home .botones .btn1 {
+  display: inline-block;
+  padding: 10px 32px;
+  margin: 0 20px 20px 0;
+  border: 2px solid #007bff;
+  border-radius: 32px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  background-color: #007bff;
+  text-align: center;
+  transition: all 0.2s;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#home .botones .btn2 {
+  display: inline-block;
+  padding: 10px 32px;
+  margin: 0 20px 20px 0;
+  border: 2px solid #ffffff;
+  border-radius: 32px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+}
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cabecera .titulo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #283d50;
+  font-size: 36px;
+}
+.cabecera p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #283d50;
+  text-align: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */

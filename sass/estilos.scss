@@ -3,11 +3,28 @@
 @import "sections/home";
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+}
+.cabecera {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .titulo {
+    font-family: $font-title;
+    font-weight: $font-weight-cabecera;
+    color: $font-color-cabecera;
+    font-size: $font-size-title;
+  }
+  p {
+    font-family: $font-texto;
+    font-size: $fontsize-sm;
+    color: $font-color-sub-aboutus;
+    text-align: center;
+  }
 }
