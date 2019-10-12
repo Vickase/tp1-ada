@@ -1,6 +1,15 @@
 @import "common/variables";
 @import "sections/nav";
 @import "sections/home";
+@import "sections/about-us";
+@import "sections/services";
+@import "sections/why-choose-us";
+@import "sections/portfolio";
+@import "sections/testimonials";
+@import "sections/team";
+@import "sections/clients";
+@import "sections/contact";
+@import "components/card";
 
 body {
   margin: 0;
