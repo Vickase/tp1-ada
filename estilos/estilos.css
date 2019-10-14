@@ -1,3 +1,8 @@
-
+#about-us .cabecera .titulo {
+  color: aqua;
+  font-weight: 500;
+  align-content: center; }
+#about-us .cabecera p {
+  color: violet; }
 
 /*# sourceMappingURL=estilos.css.map */
