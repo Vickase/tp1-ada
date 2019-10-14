@@ -4,21 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="/estilos/estilos.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
-      rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet"/>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+    <!-- le saque la barra de adelante porque no mostraba los cambios -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://newbiz-master-uqgespkghu.now.sh/lib/ionicons/css/ionicons.min.css"
+      rel="stylesheet"
+    />
 
     <title>Wayne Enterprises</title>
   </head>
   <body>
-
-
     <!--NAV-->
-    
+
     <header>
+      <label for="check-box" class="btn">
+        <i class="fa fa-bars  hamburguesa" aria-hidden="true"></i>
+      </label>
+      <input type="checkbox" name="checkbox" class="checkbox" id="check-box" />
+
       <nav>
         <img src="img/logo.png" />
         <div class="nav-menu">
@@ -52,35 +69,44 @@
       </nav>
     </header>
 
-    <!-- HOME -->
+    <!-- =================================== 
+
+         -----  HOME  -----
+
+======================================-->
+
     <div class="container">
-      <!-- HOME -->
       <section id="home">
         <div class="home-container">
-          <img src="img/intro-img.svg" />
-          <h1>We provide solutions for your business</h1>
+          <img class="hero-image" src="img/intro-img.svg" />
+          <h1>We provide <span>solutions</span> for your business</h1>
           <div class="botones">
-            <button type="button">Get Started</button>
-            <button type="button">Our Services</button>
+            <a href="#about-us" class="btn btn1">Get Started</a>
+            <a href="#services" class="btn btn2">Our Services</a>
           </div>
         </div>
       </section>
 
-      <!-- ABOUT US -->
+      <!-- =================================== 
+
+         -----  ABOUT US   -----
+
+======================================-->
+
       <section id="about-us">
         <header class="cabecera">
           <h2 class="titulo">About Us</h2>
-          <p>
+          <p class="textos">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </header>
-        <div>
+        <div class="gente">
           <img src="img/about-img.svg" alt="gente" />
         </div>
         <div class="general">
           <article>
-            <p>
+            <p class="primero"> 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -88,15 +114,19 @@
             </p>
           </article>
           <div class="Eiusmod">
-            <div class="shopping"><i class="fa fa-shopping-bag" aria-hidden="true"></i></div>
-            <h2>Eiusmod Tempor</h2>
-            <p>
+            <div class="shopping">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </div>
+            <h2 class="Ei">Eiusmod Tempor</h2>
+            <p class="segundo">
               Et harum quidem rerum facilis est et expedita distinctio. Nam
               libero tempore, cum soluta nobis est eligendi
             </p>
           </div>
           <div class="Magni">
-            <div class="picture"> <i class="fa fa-picture-o" aria-hidden="true"></i> </div> 
+            <div class="picture">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </div>
             <h2>Magni Dolores</h2>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -104,7 +134,9 @@
             </p>
           </div>
           <div class="dolor">
-            <div class="bar"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+            <div class="bar">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            </div>
             <h2>Dolor Sitema</h2>
             <p>
               Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -159,7 +191,12 @@
         </div>
       </section>
 
-      <!-- SERVICES -->
+      <!-- =================================== 
+
+         -----  SERVICES    -----
+
+======================================-->
+
       <section id="services">
         <header class="cabecera">
           <h2 class="titulo">Services</h2>
@@ -170,7 +207,9 @@
         </header>
         <div class="card-container">
           <div class="card">
-            <div class="iconos"></div>
+            <div class="iconos">
+              <i class="icon ion-ios-analytics-outline icon1"></i>
+            </div>
             <article class="texto">
               <h2>Lorem Impsum</h2>
               <p>
@@ -180,144 +219,162 @@
             </article>
           </div>
           <div class="card">
-            <div class="iconos"></div>
+            <div class="iconos">
+              <i class="icon ion-ios-bookmarks-outline icon2"></i>
+            </div>
             <article class="texto">
-              <h2>Lorem Impsum</h2>
+              <h2>Dolor Sitema</h2>
               <p>
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi sint occaecati cupiditate non provident
+                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat tarad limino ata
               </p>
             </article>
           </div>
           <div class="card">
-            <div class="iconos"></div>
+            <div class="iconos">
+              <i class="icon ion-ios-paper-outline icon3"></i>
+            </div>
             <article class="texto">
-              <h2>Lorem Impsum</h2>
+              <h2>Sed ut perspiciatis</h2>
               <p>
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi sint occaecati cupiditate non provident
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur
               </p>
             </article>
           </div>
           <div class="card">
-            <div class="iconos"></div>
+            <div class="iconos">
+              <i class="icon ion-ios-speedometer-outline icon4"></i>
+            </div>
             <article class="texto">
-              <h2>Lorem Impsum</h2>
+              <h2>Magni Dolores</h2>
               <p>
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi sint occaecati cupiditate non provident
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum
               </p>
             </article>
           </div>
           <div class="card">
-            <div class="iconos"></div>
+            <div class="iconos">
+              <i class="icon ion-ios-world-outline icon5"></i>
+            </div>
             <article class="texto">
-              <h2>Lorem Impsum</h2>
+              <h2>Nemo Enim</h2>
               <p>
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi sint occaecati cupiditate non provident
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque
               </p>
             </article>
           </div>
           <div class="card">
-            <div class="iconos"></div>
+            <div class="iconos">
+              <i class="icon ion-ios-clock-outline icon6"></i>
+            </div>
             <article class="texto">
-              <h2>Lorem Impsum</h2>
+              <h2>Eiusmod Tempor</h2>
               <p>
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi sint occaecati cupiditate non provident
+                  Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- CHOOSE -->
+<!-- =================================== 
+
+         -----   CHOOSE      -----
+
+======================================-->
+
       <section id="why-choose-us">
         <header class="cabecera">
-          <h1 class="titulo">Why choose us?</h1>
+          <h1 class="titulo excepcion">Why choose us?</h1>
           <p>
             Laudem latine persequeris id sed, ex fabulas delectus quo. No vel
             partiendo abhorreant vituperatoribus.
           </p>
         </header>
         <div class="card-container">
-          <div class="card">
-            <div class="iconos">
+          <div class="cardb">
+            <div class="iconos2">
               <i class="fa fa-diamond" aria-hidden="true"></i>
             </div>
-            <article class="texto">
+            <article class="texto2">
               <h2>Corporis Dolorem</h2>
               <p>
                 Deleniti optio et nisi dolorem debitis. Aliquam nobis est
                 temporibus sunt ab inventore officiis aut voluptatibus.
               </p>
-              <p>Read More</p>
+              <p class="readMore">Read More</p>
             </article>
           </div>
-          <div class="card">
-            <div class="iconos">
+          <div class="cardb">
+            <div class="iconos2">
               <i class="fa fa-language" aria-hidden="true"></i>
             </div>
-            <article class="texto">
+            <article class="texto2">
               <h2>Voluptates dolores</h2>
               <p>
                 Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus
                 dolorum aspernatur.
               </p>
-              <p>Read More</p>
+              <p class="readMore">Read More</p>
             </article>
           </div>
-          <div class="card">
-            <div class="iconos">
+          <div class="cardb">
+            <div class="iconos2">
               <i class="fa fa-object-group" aria-hidden="true"></i>
             </div>
-            <article class="texto">
+            <article class="texto2">
               <h2>Eum ut aspernatur</h2>
               <p>
                 Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis
                 porro in non nemo ex.
               </p>
-              <p>Read More</p>
+              <p class="readMore">Read More</p>
             </article>
           </div>
           <div class="countdown">
             <div>
-              <p>274</p>
+              <p class="numeros">274</p>
               <p>Clients</p>
             </div>
             <div>
-              <p>421</p>
+              <p class="numeros">421</p>
               <p>Projects</p>
             </div>
             <div>
-              <p>1364</p>
+              <p class="numeros">1364</p>
               <p>Hours of Support</p>
             </div>
             <div>
-              <p>18</p>
+              <p class="numeros">18</p>
               <p>Hard Workers</p>
             </div>
           </div>
         </div>
       </section>
+<!-- =================================== 
 
-      <!-- PORTFOLIO -->
+         ----- PORTFOLIO     -----
+
+======================================-->
+
       <section id="portfolio">
         <header class="cabecera">
           <h2 class="titulo">Our Portfolio</h2>
-          </header>
+        </header>
         <div class="botones">
-          <button type="button">ALL</button>
-          <button type="button">APP</button>
-          <button type="button">CARD</button>
-          <button type="button">WEB</button>
+          <button type="button" class="all">ALL</button>
+          <button type="button" class="app">APP</button>
+          <button type="button" class="Card">CARD</button>
+          <button type="button" class="web">WEB</button>
         </div>
         <div class="imagen1">
-          <img src="img/portfolio/app1.jpg" alt="celular" />
+          <img  class="app" src="img/portfolio/app1.jpg" alt="celular" />
         </div>
         <div class="imagen2">
-          <img src="img/portfolio/app2.jpg" alt="campu" />
+          <img class="app2" src="img/portfolio/app2.jpg" alt="campu" />
         </div>
         <div class="imagen3">
           <img src="img/portfolio/app3.jpg" alt="cel" />
@@ -342,7 +399,12 @@
         </div>
       </section>
 
-      <!-- TESTIMONIALS -->
+<!-- =================================== 
+
+         ----- TESTIMONIALS     -----
+
+======================================-->
+
       <section id="testimonials">
         <header class="cabecera">
           <h2 class="titulo">Testimonials</h2>
@@ -410,7 +472,12 @@
         *faltan botones*
       </section>
 
-      <!-- TEAM -->
+<!-- =================================== 
+
+         -----  TEAM    -----
+
+======================================-->
+
       <section id="team">
         <header class="cabecera">
           <h2 class="titulo">Team</h2>
@@ -439,7 +506,12 @@
         </div>
       </section>
 
-      <!-- CLIENTS -->
+<!-- =================================== 
+
+         ----- CLIENTS    -----
+
+======================================-->
+
       <section id="our-clients">
         <header class="cabecera">
           <h2 class="titulo">Our CLients</h2>
@@ -474,7 +546,12 @@
         </div>
       </section>
 
-      <!-- CONTACT -->
+<!-- =================================== 
+
+         ----- CONTACT    -----
+
+======================================-->
+
       <section id="contact">
         <header class="cabecera">
           <h2 class="titulo">Contact Us</h2>
@@ -488,26 +565,26 @@
           <div class="direccion">
             <p>A108 Adam Street, NY 535022</p>
           </div>
-          <div class="email">
-            <p>info@example.com</p>
-          </div>
-          <div class="telefono">
-            <p>+1 5589 55488 55</p>
+          <div class="email"><p>info@example.com</p></div>
+          <div class="telefono"><p>+1 5589 55488 55</p></div>
+          <div class="form">
+            <form>
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Your Email" />
+              <input type="text" placeholder="Subject" />
+              <textarea placeholder="Message" rows="5"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
           </div>
         </div>
-        <div class="form">
-          <form>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Message" rows="5"></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
       </section>
 
-      <!--FOOTER-->
+<!-- =================================== 
+
+         -----  FOOTER    -----
+
+======================================-->
+
       <footer class="pie-pagina">
         <div class="parte-superior">
           <div class="wayne">
@@ -538,7 +615,7 @@
             <p>Email: info@example.com</p>
           </div>
           <div class="redes-sociales">
-            <a href="#" class="twitter>
+            <a href="#" class="twitter">
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
             <a href="#" class="facebook">
@@ -574,61 +651,7 @@
           <p class="designed">Designed by...</p>
         </div>
       </footer>
+      -->
     </div>
-
-    <!-- FOOTER -->
-    <footer class="pie-pagina">
-      <div class="parte-superior">
-        <div class="wayne">
-          <h2 class="twayne">WAYNE</h2>
-          <p>
-            Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada
-            terra videa magna derita valies darta donna mare fermentum iaculis
-            eu non diam phasellus. Scelerisque felis imperdiet proin fermentum
-            leo. Amet volutpat consequat mauris nunc congue.
-          </p>
-        </div>
-        <div class="useful-links">
-          <h3 class="subtitulos-links"></h3>
-          <ul>
-            <li><a class="u-link" href="#">Home</a></li>
-            <li><a class="u-link" href="#">About us</a></li>
-            <li><a class="u-link" href="#">Services</a></li>
-            <li><a class="u-link" href="#">Terms of service</a></li>
-            <li><a class="u-link" href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-        <div class="contact-us">
-          <h4 class="us">CONTACT US</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022t</p>
-          <p>United States</p>
-          <p>Phone: +1 5589 55488 55</p>
-          <p>Email: info@example.com</p>
-        </div>
-        <div class="redes sociales">
-          <a class="twitter" href="#"></a>
-          <a class="facebook" href="#"></a>
-          <a class="instragram" href="#"></a>
-          <a class="linkedin" href="#"></a>
-        </div>
-        <div>
-          <h4 class="newsletter">OUR NEWSLETTER</h4>
-          <p>
-            Tamen quem nulla quae legam multos aute sint culpa legam noster
-            magna veniam enim veniam illum dolore legam minim quorum culpa amet
-            magna export quem marada parida nodela caramase seza.
-          </p>
-          <form>
-            <input type="email" name="email" />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
-      <div class="parte-inferior">
-        <p>© Copyright Wayne Enterprises. All Rights Reserved</p>
-        <p>Designed by ...</p>
-      </div>
-    </footer>
   </body>
 </html>

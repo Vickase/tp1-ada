@@ -1,11 +1,77 @@
 #about-us{
-    .cabecera{
-        .titulo{color: aqua;
-            font-weight: 500;
-            align-content: center;
-        }
-        p{
-            color: violet;
-        }
+    padding:$padding-general;
+    .textos {
+        font-family: $font-texto;
+        font-size: $fontsize-reg;
+        line-height: 20px;
+        text-align: center;
+        padding: 0px 0px 50px;
+      }
+}
+
+.gente{
+    img{
+        width: 360px;
+        height: 250px;
+        vertical-align: middle;
+    
     }
 }
+.general{
+    .article{
+            .primero{
+                text-align: left;
+                font-family: $font-texto;
+                font-size: $fontsize-reg;
+                line-height: 20px;
+            }
+           
+            }
+
+        }
+        
+ .Eiusmod{
+     .shopping{
+        color: black;
+        border-radius: 60%;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        float: left;
+    
+    }
+    .Ei{
+        text-align: justify;
+        font-family: $font-title;
+        font-weight: $font-weight-subtitulos;
+
+    }
+    .segundo{
+        text-align: justify;
+    }
+
+    }
+
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        .all{
+            border-radius: 50%;
+            width: 40px;
+            background: $color-button-icon;
+
+        }
+    }
+
+
+    .imagen1{
+        height: 200px;
+        width: 200px;
+        .app{
+            height: 300px;
+            width: 300px;
+            background-position-x: 20px;
+            border-radius: 10px;
+        }
+    }
