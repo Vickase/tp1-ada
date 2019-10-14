@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
     <!-- le saque la barra de adelante porque no mostraba los cambios -->
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -28,7 +28,11 @@
     <title>Wayne Enterprises</title>
   </head>
   <body>
-    <!--NAV-->
+    <!-- =================================== 
+
+         -----  NAV  -----
+
+======================================-->
 
     <header>
       <label for="check-box" class="btn">
@@ -261,8 +265,8 @@
             <article class="texto">
               <h2>Nemo Enim</h2>
               <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium voluptatum deleniti atque
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque
               </p>
             </article>
           </div>
@@ -273,14 +277,15 @@
             <article class="texto">
               <h2>Eiusmod Tempor</h2>
               <p>
-                  Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                Et harum quidem rerum facilis est et expedita distinctio. Nam
+                libero tempore, cum soluta nobis est eligendi
               </p>
             </article>
           </div>
         </div>
       </section>
 
-<!-- =================================== 
+      <!-- =================================== 
 
          -----   CHOOSE      -----
 
@@ -354,7 +359,7 @@
           </div>
         </div>
       </section>
-<!-- =================================== 
+      <!-- =================================== 
 
          ----- PORTFOLIO     -----
 
@@ -399,7 +404,7 @@
         </div>
       </section>
 
-<!-- =================================== 
+      <!-- =================================== 
 
          ----- TESTIMONIALS     -----
 
@@ -472,7 +477,7 @@
         *faltan botones*
       </section>
 
-<!-- =================================== 
+      <!-- =================================== 
 
          -----  TEAM    -----
 
@@ -506,7 +511,7 @@
         </div>
       </section>
 
-<!-- =================================== 
+      <!-- =================================== 
 
          ----- CLIENTS    -----
 
@@ -546,7 +551,7 @@
         </div>
       </section>
 
-<!-- =================================== 
+      <!-- =================================== 
 
          ----- CONTACT    -----
 
@@ -557,29 +562,39 @@
           <h2 class="titulo">Contact Us</h2>
         </header>
         <div class="contact-container">
-          <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-            ></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+          >
+          </iframe>
+          <div class="datos">
+            <div class="direccion">
+              <i class="fa fa-map-marker icono1 a" aria-hidden="true"></i>
+              <p>A108 Adam Street, NY 535022</p>
+            </div>
+            <div class="email">
+              <i class="fa fa-envelope icono1 b" aria-hidden="true"></i>
+              <p>info@example.com</p>
+            </div>
+            <div class="telefono">
+              <i class="fa fa-phone icono1 c" aria-hidden="true"></i>
+              <p>+1 5589 55488 55</p>
+            </div>
           </div>
-          <div class="direccion">
-            <p>A108 Adam Street, NY 535022</p>
-          </div>
-          <div class="email"><p>info@example.com</p></div>
-          <div class="telefono"><p>+1 5589 55488 55</p></div>
           <div class="form">
             <form>
               <input type="text" placeholder="Your Name" />
               <input type="email" placeholder="Your Email" />
               <input type="text" placeholder="Subject" />
               <textarea placeholder="Message" rows="5"></textarea>
-              <button type="submit">Send Message</button>
+              <div class="boton">
+                <button type="submit" class="btn btn1">Send Message</button>
+              </div>
             </form>
           </div>
         </div>
       </section>
 
-<!-- =================================== 
+      <!-- =================================== 
 
          -----  FOOTER    -----
 
@@ -597,7 +612,7 @@
             </p>
           </div>
           <div class="useful-links">
-            <h3 class="subtitulo-links">Useful links</h3>
+            <h3 class="subtitulo-links">USEFUL LINKS</h3>
             <ul>
               <li><a class="u-link" href="#">Home</a></li>
               <li><a class="u-link" href="#">About Us</a></li>
@@ -607,7 +622,7 @@
             </ul>
           </div>
           <div class="contact-us">
-            <h4>Contact Us</h4>
+            <h4 class="subtitulo-links">CONTACT US</h4>
             <p>A108 Adam Street</p>
             <p>New York, NY 535022</p>
             <p>United States</p>
@@ -615,24 +630,24 @@
             <p>Email: info@example.com</p>
           </div>
           <div class="redes-sociales">
-            <a href="#" class="twitter">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="#" class=" circle ">
+              <i class="fa fa-twitter twitter" aria-hidden="true"></i>
             </a>
-            <a href="#" class="facebook">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+            <a href="#" class=" circle ">
+              <i class="fa fa-facebook facebook" aria-hidden="true"></i>
             </a>
-            <a href="#" class="instagram">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+            <a href="#" class=" circle ">
+              <i class="fa fa-instagram instagram" aria-hidden="true"></i>
             </a>
-            <a href="#" class="google">
-              <i class="fa fa-google-plus" aria-hidden="true"></i>
+            <a href="#" class=" circle ">
+              <i class="fa fa-google-plus google" aria-hidden="true"></i>
             </a>
-            <a href="#" class="linkedin">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a href="#" class=" circle ">
+              <i class="fa fa-linkedin linkedin" aria-hidden="true"></i>
             </a>
           </div>
           <div class="newsletter">
-            <h4>Our newsletter</h4>
+            <h4 class="subtitulo-links">OUR NEWSLETTER</h4>
             <p>
               Tamen quem nulla quae legam multos aute sint culpa legam noster
               magna veniam enim veniam illum dolore legam minim quorum culpa
@@ -640,18 +655,16 @@
             </p>
             <form>
               <input type="email" name="email" />
-              <button type="submit">Subscribe</button>
+              <button type="submit" class="btn s">Subscribe</button>
             </form>
           </div>
         </div>
         <div class="parte-inferior">
           <p class="copyright">
-            © Copyright Wayne Enterprises. All Rights Reserved
-          </p>
+            © Copyright Wayne Enterprises. All Rights Reserved </p>
           <p class="designed">Designed by...</p>
         </div>
       </footer>
-      -->
     </div>
   </body>
 </html>
