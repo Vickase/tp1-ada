@@ -7,18 +7,17 @@
         text-align: center;
         padding: 0px 0px 50px;
       }
-}
 
-.gente{
-    img{
+    .gente{
+      img{
         width: 360px;
         height: 250px;
         vertical-align: middle;
     
     }
 }
-.general{
-    .article{
+    .general{
+       .article{
             .primero{
                 text-align: left;
                 font-family: $font-texto;
@@ -30,7 +29,8 @@
 
         }
         
- .Eiusmod{
+   .Eiusmod{
+       border: 1px solid black;
      .shopping{
         color: black;
         border-radius: 60%;
@@ -51,6 +51,7 @@
     }
 
     }
+}
 
 
     .botones{

@@ -58,31 +58,30 @@ nav {
     line-height: 20px;
     text-align: center;
     padding: 0px 0px 50px; }
-
-.gente img {
-  width: 360px;
-  height: 250px;
-  vertical-align: middle; }
-
-.general .article .primero {
-  text-align: left;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  line-height: 20px; }
-
-.Eiusmod .shopping {
-  color: black;
-  border-radius: 60%;
-  height: 60px;
-  width: 60px;
-  display: flex;
-  float: left; }
-.Eiusmod .Ei {
-  text-align: justify;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600; }
-.Eiusmod .segundo {
-  text-align: justify; }
+  #about-us .gente img {
+    width: 360px;
+    height: 250px;
+    vertical-align: middle; }
+  #about-us .general .article .primero {
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 20px; }
+  #about-us .Eiusmod {
+    border: 1px solid black; }
+    #about-us .Eiusmod .shopping {
+      color: black;
+      border-radius: 60%;
+      height: 60px;
+      width: 60px;
+      display: flex;
+      float: left; }
+    #about-us .Eiusmod .Ei {
+      text-align: justify;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600; }
+    #about-us .Eiusmod .segundo {
+      text-align: justify; }
 
 .botones {
   display: flex;
