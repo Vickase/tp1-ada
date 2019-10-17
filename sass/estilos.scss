@@ -11,15 +11,18 @@
 @import "sections/contact";
 @import "components/card";
 @import "components/cards2";
+@import"common/mixins";
 
 body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .cabecera {
   display: flex;

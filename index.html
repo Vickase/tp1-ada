@@ -33,53 +33,58 @@
          -----  NAV  -----
 
 ======================================-->
-
-    <header>
-      <label for="check-box" class="btn">
-        <i class="fa fa-bars  hamburguesa" aria-hidden="true"></i>
-      </label>
-      <input type="checkbox" name="checkbox" class="checkbox" id="check-box" />
-
-      <nav>
+    <div class="container">
+      <header id="header">
         <img src="img/logo.png" />
-        <div class="nav-menu">
-          <a>Home</a>
-          <a>About Us</a>
-          <a>Services</a>
-          <a>Portfolio</a>
-          <a>Team</a>
-          <div class="dropdown">
-            <a>Drop down</a>
-            <div class="dropdown-content">
-              <a>Drop Down 1</a>
-              <div class="dropdown-submenu">
-                <a>Drop Down 2</a>
-              </div>
-              <div class="deepdropdown-menu">
-                <!-- se puede hacer un div qué contenga todo en vez de ul y li, un div con a adentro-->
-                <a>Deep DropDown 1</a>
-                <a>Deep DropDown 2</a>
-                <a>Deep DropDown 3</a>
-                <a>Deep DropDown 4</a>
-                <a>Deep DropDown 5</a>
-              </div>
-              <a>Drop Down 3</a>
-              <a>Drop Down 4</a>
-              <a>Drop Down 5</a>
-            </div>
-            <a>Contact Us</a>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <!-- =================================== 
+        <label for="check-box" class="btn">
+          <i class="fa fa-bars  hamburguesa" aria-hidden="true"></i>
+        </label>
+        <input
+          type="checkbox"
+          name="checkbox"
+          class="checkbox"
+          id="check-box"
+        />
+
+        <nav>
+          <div class="nav-menu">
+            <a>Home</a>
+            <a>About Us</a>
+            <a>Services</a>
+            <a>Portfolio</a>
+            <a>Team</a>
+            <div class="dropdown">
+              <a>Drop down</a>
+              <div class="dropdown-content">
+                <p>Drop Down 1</p>
+                <div class="dropdown-submenu">
+                  <p>Drop Down 2</p>
+                </div>
+                <div class="deepdropdown-menu">
+                  <!-- se puede hacer un div qué contenga todo en vez de ul y li, un div con a adentro-->
+                  <a>Deep DropDown 1</a>
+                  <a>Deep DropDown 2</a>
+                  <a>Deep DropDown 3</a>
+                  <a>Deep DropDown 4</a>
+                  <a>Deep DropDown 5</a>
+                </div>
+                <a>Drop Down 3</a>
+                <a>Drop Down 4</a>
+                <a>Drop Down 5</a>
+              </div>
+              <a>Contact Us</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- =================================== 
 
          -----  HOME  -----
 
 ======================================-->
 
-    <div class="container">
       <section id="home">
         <div class="home-container">
           <img class="hero-image" src="img/intro-img.svg" />
@@ -359,6 +364,7 @@
           </div>
         </div>
       </section>
+
       <!-- =================================== 
 
          ----- PORTFOLIO     -----
@@ -426,7 +432,7 @@
             eget nibh et. Maecen aliquam, risus at semper.
           </p>
         </div>
-        <div class="contenedors">
+        <!-- <div class="contenedors">
           <img src="img/testimonial-2.jpg" alt="sara" />
         </div>
         <div class=" testimonios2">
@@ -473,8 +479,8 @@
             veniam tempor noster veniam enim culpa labore duis sunt culpa nulla
             illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
           </p>
-        </div>
-        *faltan botones*
+        </div> 
+        *faltan botones*-->
       </section>
 
       <!-- =================================== 
@@ -661,7 +667,8 @@
         </div>
         <div class="parte-inferior">
           <p class="copyright">
-            © Copyright Wayne Enterprises. All Rights Reserved </p>
+            © Copyright Wayne Enterprises. All Rights Reserved
+          </p>
           <p class="designed">Designed by...</p>
         </div>
       </footer>

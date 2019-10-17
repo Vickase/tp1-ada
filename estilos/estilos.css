@@ -1,4 +1,36 @@
-nav {
+#header {
+  width: 100%;
+  background-color: #ffffff;
+  position: sticky;
+  height: 60px;
+  top: 0;
+  z-index: 9999;
+  left: 0;
+}
+#header img {
+  width: 70px;
+  height: auto;
+  left: 0;
+  margin-left: 10px;
+  padding: 15px;
+}
+#header .btn {
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  position: relative;
+  right: -90px;
+  top: 0;
+  padding: 15px;
+  display: inline-block;
+}
+#header .checkbox {
+  display: flex;
+  padding: 5px 5px;
+  justify-content: center;
+  display: none;
+}
+#header nav {
   display: none;
 }
 
@@ -442,11 +474,13 @@ nav {
 body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .cabecera {
