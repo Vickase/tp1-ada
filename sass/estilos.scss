@@ -11,17 +11,21 @@
 @import "sections/contact";
 @import "components/card";
 @import "components/cards2";
+@import"common/mixins";
+
 *{
   box-sizing: border-box;
 }
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  
 }
 .cabecera {
   display: flex;
