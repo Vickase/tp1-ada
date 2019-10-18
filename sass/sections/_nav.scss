@@ -5,7 +5,7 @@
   height: 60px;
   top: 0;
   z-index: 1;
-  //position: fixed;
+  position: fixed;
   .header-container {
     display: flex;
     flex-direction: row;
@@ -35,9 +35,7 @@
   }
 
   .sidebar {
-    width: 240px;
     height: auto;
-    background: rgba(19, 39, 57, 0.8);
     font-family: $font-texto;
     color: #ffffff;
     z-index: 999;
@@ -46,39 +44,52 @@
     left: 0;
     bottom: 0;
     font-size: $fontsize-sm;
-    .side-menu {
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      padding-top: 20px;
-      box-sizing: border-box;
-      a {
-        padding: 10px;
-      }
-      .dropdown {
-        padding: 10px;
-        padding-top: 0;
+    max-width: 0;
+    transition: all 0.75s ease;
+    background: rgba(19, 39, 57, 0.8);
+    overflow: hidden;
 
-        p {
-          margin-block-start: 0;
-          margin-block-end: 0;
+    .sidenav {
+
+      .side-menu {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 20px;
+        box-sizing: border-box;
+
+        .link {
+          padding: 10px;
         }
-
-        .dropdown-content {
-          display: flex;
-          flex-direction: column;
-
-          .dropdown-submenu {
-            display: flex;
+        .dropdown {
+          padding: 10px;
+          padding-top: 0;
+          p {
+            margin-block-start: 0;
+            margin-block-end: 0;
           }
-          .deepdropdown-menu {
+          .dropdown-content {
             display: flex;
             flex-direction: column;
-            padding: 10px;
-            box-sizing: border-box;
+            .dropdown-submenu {
+              display: flex;
+            }
+            .deepdropdown-menu {
+              display: flex;
+              flex-direction: column;
+              padding: 10px;
+              box-sizing: border-box;
+              .linkdeep{
+                padding: 10px;
+              }
+            }
           }
         }
       }
     }
   }
+}
+#check-box2:checked + .sidebar {
+  max-width: 240px;
+  
 }
