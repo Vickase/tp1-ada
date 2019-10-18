@@ -52,9 +52,9 @@ nav {
 
 #about-us {
   padding: 0px 15px; }
-  #about-us .textos {
+  #about-us .texto {
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
     text-align: center;
     padding: 0px 0px 50px; }
@@ -62,43 +62,90 @@ nav {
     width: 360px;
     height: 250px;
     vertical-align: middle; }
-  #about-us .general .article .primero {
+  #about-us .general article .primero {
     text-align: left;
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    line-height: 20px; }
-  #about-us .Eiusmod {
-    border: 1px solid black; }
-    #about-us .Eiusmod .shopping {
-      color: black;
-      border-radius: 60%;
-      height: 60px;
-      width: 60px;
-      display: flex;
-      float: left; }
-    #about-us .Eiusmod .Ei {
-      text-align: justify;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600; }
-    #about-us .Eiusmod .segundo {
-      text-align: justify; }
-
-.botones {
-  display: flex;
-  justify-content: center; }
-  .botones .all {
+    font-size: 16px;
+    line-height: 24px; }
+  #about-us .icono {
     border-radius: 50%;
-    width: 40px;
-    background: #007bff; }
+    height: 55px;
+    width: 55px;
+    display: flex;
+    float: left;
+    border: 2px solid #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    #about-us .icono .fa {
+      font-size: 25px;
+      color: #007bff;
+      display: inline-block; }
 
-.imagen1 {
-  height: 200px;
-  width: 200px; }
-  .imagen1 .app {
-    height: 300px;
-    width: 300px;
-    background-position-x: 20px;
-    border-radius: 10px; }
+.Ei {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0px 0px 0px 81px;
+  font-size: 15px; }
+
+.segundo {
+  display: inline-block;
+  text-align: left;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 0px 24px 33px 81px;
+  margin: -39px 0px 0px 0px;
+  line-height: 24px; }
+
+.Mag {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0px 0px 0px 81px;
+  font-size: 15px; }
+
+.tercero {
+  display: inline-block;
+  text-align: left;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 0px 24px 33px 81px;
+  margin: -39px 0px 0px 0px;
+  line-height: 24px; }
+
+.Dol {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0px 0px 0px 81px;
+  font-size: 15px; }
+
+.cuarto {
+  display: inline-block;
+  text-align: left;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 0px 24px 33px 81px;
+  margin: -39px 0px 0px 0px;
+  line-height: 24px; }
+
+.general2 img {
+  width: 360px;
+  height: 250px;
+  vertical-align: middle;
+  padding: 0px 15px; }
+.general2 .Sub {
+  padding: 0px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #283d50; }
+.general2 .dos {
+  padding: 0px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
 
 #services {
   background-color: #ecf5ff; }
@@ -137,6 +184,117 @@ nav {
         text-align: center; }
       #why-choose-us .countdown div p {
         text-align: center; }
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .botones .boton {
+    cursor: pointer;
+    padding: 6px 20px;
+    margin: 15px 15px 15px 0px;
+    font-family: "Open Sans", sans-serif;
+    color: #007bff;
+    border-radius: 20px;
+    background: #bfddfe;
+    font-size: 12px; }
+
+.imagen {
+  height: 250px;
+  width: 344px;
+  overflow: hidden;
+  float: none;
+  margin: 17px 18px 20px;
+  position: relative;
+  border-radius: 6px;
+  display: block;
+  box-sizing: border-box; }
+  .imagen .celular {
+    overflow: hidden;
+    max-width: 100%;
+    position: absolute;
+    bottom: -46px; }
+  .imagen .compu {
+    overflow: hidden;
+    max-width: 109%;
+    position: relative;
+    right: 18px; }
+  .imagen .cel {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    bottom: 140px; }
+  .imagen .berlin {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    bottom: 130px; }
+  .imagen .web {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    bottom: 133px; }
+  .imagen .manos {
+    overflow: hidden;
+    max-width: 120%;
+    position: relative;
+    right: 36px; }
+  .imagen .thank {
+    overflow: hidden;
+    max-width: 113%;
+    position: relative;
+    right: 23px; }
+  .imagen .tarjetas {
+    overflow: hidden;
+    max-width: 111%;
+    position: relative;
+    right: 13px; }
+  .imagen .tablet {
+    overflow: hidden;
+    max-width: 110%;
+    position: relative;
+    right: 19px; }
+
+#testimonials {
+  background: #ecf5ff; }
+
+.wason {
+  width: 120px;
+  border-radius: 50%;
+  max-width: 100%;
+  border: 4px solid #ffffff; }
+
+.team p {
+  font-family: "Open Sans", sans-serif;
+  color: #556877;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0px 15px; }
+.team .team1 {
+  margin: 20px; }
+  .team .team1 .batman {
+    height: 340px;
+    border-radius: 175px;
+    max-width: 118%; }
+
+#our-clients {
+  background-color: #ecf5ff;
+  padding: 0px 15px; }
+  #our-clients .tarjeta {
+    background-color: #ffffff;
+    padding: 64px;
+    height: 160px;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #d6eaff; }
+    #our-clients .tarjeta .logo {
+      max-width: 100%; }
 
 .card {
   background-color: #ffffff;
@@ -213,6 +371,9 @@ nav {
       font-weight: 700;
       font-size: 14px; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -235,6 +396,6 @@ body {
     color: #283d50;
     text-align: center;
     margin: 0;
-    font-size: 15px; }
+    font-size: 16px; }
 
 /*# sourceMappingURL=estilos.css.map */
