@@ -33,58 +33,93 @@
          -----  NAV  -----
 
 ======================================-->
-    <div class="container">
-      <header id="header">
-        <img src="img/logo.png" />
 
-        <label for="check-box" class="btn">
-          <i class="fa fa-bars  hamburguesa" aria-hidden="true"></i>
-        </label>
-        <input
-          type="checkbox"
-          name="checkbox"
-          class="checkbox"
-          id="check-box"
-        />
-
-        <nav>
-          <div class="nav-menu">
-            <a>Home</a>
-            <a>About Us</a>
-            <a>Services</a>
-            <a>Portfolio</a>
-            <a>Team</a>
-            <div class="dropdown">
-              <a>Drop down</a>
-              <div class="dropdown-content">
-                <p>Drop Down 1</p>
-                <div class="dropdown-submenu">
-                  <p>Drop Down 2</p>
-                </div>
-                <div class="deepdropdown-menu">
-                  <!-- se puede hacer un div qué contenga todo en vez de ul y li, un div con a adentro-->
-                  <a>Deep DropDown 1</a>
-                  <a>Deep DropDown 2</a>
-                  <a>Deep DropDown 3</a>
-                  <a>Deep DropDown 4</a>
-                  <a>Deep DropDown 5</a>
-                </div>
-                <a>Drop Down 3</a>
-                <a>Drop Down 4</a>
-                <a>Drop Down 5</a>
+    <header id="header" class="fixed">
+      <div class="header-container">
+          <img src="img/logo.png" />
+          <label for="check-box" class="btn">
+            <i class="fa fa-bars  hamburguesa" aria-hidden="true"></i>
+          </label>
+          <input
+            type="checkbox"
+            name="checkbox"
+            class="checkbox"
+            id="check-box"
+          />
+        </div>
+      <nav>
+        <div class="nav-menu">
+          <a>Home</a>
+          <a>About Us</a>
+          <a>Services</a>
+          <a>Portfolio</a>
+          <a>Team</a>
+          <div class="dropdown">
+            <a>Drop down</a>
+            <div class="dropdown-content">
+              <p>Drop Down 1</p>
+              <div class="dropdown-submenu">
+                <p>Drop Down 2</p>
               </div>
-              <a>Contact Us</a>
+              <div class="deepdropdown-menu">
+                <!-- se puede hacer un div qué contenga todo en vez de ul y li, un div con a adentro-->
+                <a>Deep DropDown 1</a>
+                <a>Deep DropDown 2</a>
+                <a>Deep DropDown 3</a>
+                <a>Deep DropDown 4</a>
+                <a>Deep DropDown 5</a>
+              </div>
+              <a>Drop Down 3</a>
+              <a>Drop Down 4</a>
+              <a>Drop Down 5</a>
             </div>
+            <a>Contact Us</a>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
 
-      <!-- =================================== 
+        <div class="sidebar">
+          <nav>
+              <div class="side-menu">
+                  <a>Home</a>
+                  <a>About Us</a>
+                  <a>Services</a>
+                  <a>Portfolio</a>
+                  <a>Team</a>
+                  <div class="dropdown">
+                    <p>Drop down</p>
+                    <div class="dropdown-content">
+                      <p>Drop Down 1</p>
+                      <div class="dropdown-submenu">
+                        <p>Drop Down 2</p>
+                      </div>
+                      <div class="deepdropdown-menu">
+                    
+                        <a>Deep DropDown 1</a>
+                        <a>Deep DropDown 2</a>
+                        <a>Deep DropDown 3</a>
+                        <a>Deep DropDown 4</a>
+                        <a>Deep DropDown 5</a>
+                      </div>
+                      <a>Drop Down 3</a>
+                      <a>Drop Down 4</a>
+                      <a>Drop Down 5</a>
+                    </div>
+                    <a>Contact Us</a>
+                  </div>
+
+          </nav>
+
+
+        </div>
+    </header>
+
+    <!-- =================================== 
 
          -----  HOME  -----
 
 ======================================-->
-
+    <div class="container">
       <section id="home">
         <div class="home-container">
           <img class="hero-image" src="img/intro-img.svg" />

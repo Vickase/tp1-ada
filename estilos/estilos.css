@@ -1,37 +1,80 @@
 #header {
   width: 100%;
   background-color: #ffffff;
-  position: sticky;
+  left: 0;
   height: 60px;
   top: 0;
-  z-index: 9999;
-  left: 0;
+  z-index: 1;
 }
-#header img {
+#header .header-container {
+  display: flex;
+  flex-direction: row;
+}
+#header .header-container img {
   width: 70px;
   height: auto;
   left: 0;
   margin-left: 10px;
   padding: 15px;
 }
-#header .btn {
-  height: 50px;
-  width: 50px;
+#header .header-container .btn {
+  display: flex;
+  flex-direction: row;
   font-size: 40px;
-  position: relative;
-  right: -90px;
-  top: 0;
-  padding: 15px;
-  display: inline-block;
+  color: black;
 }
-#header .checkbox {
+#header .header-container .checkbox {
   display: flex;
   padding: 5px 5px;
   justify-content: center;
   display: none;
 }
-#header nav {
+#header .nav-menu {
   display: none;
+}
+#header .sidebar {
+  width: 240px;
+  height: auto;
+  background: rgba(19, 39, 57, 0.8);
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+#header .sidebar .side-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+#header .sidebar .side-menu a {
+  padding: 10px;
+}
+#header .sidebar .side-menu .dropdown {
+  padding: 10px;
+  padding-top: 0;
+}
+#header .sidebar .side-menu .dropdown p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+#header .sidebar .side-menu .dropdown .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+#header .sidebar .side-menu .dropdown .dropdown-content .dropdown-submenu {
+  display: flex;
+}
+#header .sidebar .side-menu .dropdown .dropdown-content .deepdropdown-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 #home {
@@ -474,13 +517,11 @@
 body {
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .cabecera {
